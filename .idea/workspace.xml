@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0536b9d5-2abb-42b8-aa31-a4889304120e" name="Changes" comment="Create exchange rate portal API">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/exchange_rates.mv.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/exchange_rates.trace.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/testdb.mv.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/testdb.trace.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/ExchangeRatePortalApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/business/exceptions/Exceptions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/business/handler/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/business/repository/ExchangeRateRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/business/service/ExchangeRateJobService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/business/service/ExchangeRateService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/config/ExchangeRateInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/config/ExchangeRateJobConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/ExchangeRateController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dom/DOM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/domain/ExchangeRate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/domain/SupportedCurrency.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dto/ConvertedAmountResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dto/ExchangeRateHistoryResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dto/SingleExchangeRateHistoryResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/external/ecb/EcbXmlFetcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/job/ExchangeRateJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/mapper/ExchangeRateMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/scheduling/HolidayCalendarProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/swagger/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/swagger/SwaggerResponseExamples.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/holidays.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/CommonTestDataBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/business/service/ExchangeRateJobServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/business/service/ExchangeRateServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/config/ExchangeRateInitializerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/config/ExchangeRateJobCronTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/domain/ExchangeRateDataBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/handler/GlobalExceptionHandlerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/integration/controller/ControllerIntegrationTestBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/integration/controller/ExchangeRateControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/job/ExchangeRateJobTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/mapper/ExchangeRateMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/scheduling/HolidayCalendarProviderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/demo/scheduling/test-empty.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/demo/scheduling/test-holidays.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/demo/scheduling/test-multi-holidays.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/demo/service/test-last-90-days-incorrect-rate.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/demo/service/test-last-90-days-malformed.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/demo/service/test-last-90-days.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/ExchangeRatePortalApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/business/exceptions/Exceptions$DailyExchangeRatesNotFoundException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/business/exceptions/Exceptions$ExchangeRateJobException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/business/exceptions/Exceptions$ExchangeRateNotFoundException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/business/exceptions/Exceptions$HolidayCalendarLoadException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/business/exceptions/Exceptions$MissingFileException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/business/exceptions/Exceptions.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/business/handler/GlobalExceptionHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/business/repository/ExchangeRateRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/business/service/ExchangeRateJobService$EcbXmlData.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/business/service/ExchangeRateJobService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/business/service/ExchangeRateService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/config/ExchangeRateInitializer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/config/ExchangeRateJobConfig$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/config/ExchangeRateJobConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/controller/ExchangeRateController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/dom/DOM.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/domain/ExchangeRate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/domain/SupportedCurrency.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/dto/ConvertedAmountResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/dto/ExchangeRateHistoryResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/dto/SingleExchangeRateHistoryResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/external/ecb/EcbXmlFetcher.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/job/ExchangeRateJob.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/mapper/ExchangeRateMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/scheduling/HolidayCalendarProvider.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/swagger/Config.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/swagger/SwaggerResponseExamples.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/holidays.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/example/demo/CommonTestDataBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/example/demo/business/service/ExchangeRateJobServiceTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/example/demo/business/service/ExchangeRateServiceTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/example/demo/config/ExchangeRateInitializerTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/example/demo/config/ExchangeRateJobCronTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/example/demo/domain/ExchangeRateDataBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/example/demo/handler/GlobalExceptionHandlerTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/example/demo/integration/controller/ControllerIntegrationTestBase.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/example/demo/integration/controller/ExchangeRateControllerTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/example/demo/job/ExchangeRateJobTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/example/demo/mapper/ExchangeRateMapperTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/example/demo/scheduling/HolidayCalendarProviderTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/demo/scheduling/test-empty.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/demo/scheduling/test-holidays.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/demo/scheduling/test-multi-holidays.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/demo/service/test-last-90-days-incorrect-rate.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/demo/service/test-last-90-days-malformed.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/demo/service/test-last-90-days.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectId" id="2vwoOVC5qErvBzYAuUMNKeISDB8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/demo/service" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Marija\IdeaProjects\ExchangeRatePortal\src\test\resources\demo\service" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Marija\IdeaProjects\ExchangeRatePortal\src\test\resources\demo\service" />
+      <recent name="C:\Users\Marija\IdeaProjects\ExchangeRatePortal\src\test\resources\demo" />
+      <recent name="C:\Users\Marija\IdeaProjects\ExchangeRatePortal\src\test\resources\demo\external" />
+      <recent name="C:\Users\Marija\IdeaProjects\ExchangeRatePortal\src\test\resources\demo\scheduling" />
+      <recent name="C:\Users\Marija\IdeaProjects\ExchangeRatePortal\src\test\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.demo" />
+      <recent name="com.example.demo.domain" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ExchangeRateControllerTest">
+    <configuration name="EcbXmlFetcherTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ExchangeRatePortal" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.external.ecb.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demo.external.ecb" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.external.ecb.EcbXmlFetcherTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EcbXmlFetcherTest.shouldParseEcbXmlFileCorrectly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ExchangeRatePortal" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.external.ecb.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demo.external.ecb" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.external.ecb.EcbXmlFetcherTest" />
+      <option name="METHOD_NAME" value="shouldParseEcbXmlFileCorrectly" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExchangeRateControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ExchangeRatePortal" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.integration.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demo.integration.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.integration.controller.ExchangeRateControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExchangeRateJobServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ExchangeRatePortal" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.business.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demo.business.service" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.business.service.ExchangeRateJobServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.example.demo in ExchangeRatePortal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ExchangeRatePortal" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demo" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ExchangeRateControllerTest" />
+        <item itemvalue="JUnit.com.example.demo in ExchangeRatePortal" />
+        <item itemvalue="JUnit.EcbXmlFetcherTest.shouldParseEcbXmlFileCorrectly" />
+        <item itemvalue="JUnit.EcbXmlFetcherTest" />
+        <item itemvalue="JUnit.ExchangeRateJobServiceTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0536b9d5-2abb-42b8-aa31-a4889304120e" name="Changes" comment="" />
+      <created>1745065467481</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1745065467481</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Create exchange rate portal API" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create exchange rate portal API" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/business/handler/GlobalExceptionHandler.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/business/service/ExchangeRateJobService.java</url>
+          <line>130</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/business/service/ExchangeRateJobService.java</url>
+          <line>136</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
