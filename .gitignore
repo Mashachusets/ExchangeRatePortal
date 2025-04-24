@@ -1,6 +1,7 @@
 .mvn
 build/
 target/
+data
 
 ### IntelliJ IDEA ###
 .idea

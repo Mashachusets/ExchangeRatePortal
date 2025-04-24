@@ -1,9 +1,0 @@
-2025-04-22 17:29:44.057694+03:00 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "EXCHANGE_RATES" not found (this database is empty); SQL statement:
-select er1_0.id from exchange_rates er1_0 where er1_0.valid_from>? fetch first ? rows only [42104-224]
-2025-04-22 17:30:47.853571+03:00 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "EXCHANGE_RATES" not found (this database is empty); SQL statement:
-select er1_0.id from exchange_rates er1_0 where er1_0.valid_from>? fetch first ? rows only [42104-224]
-2025-04-22 17:31:43.092515+03:00 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "EXCHANGE_RATES" not found (this database is empty); SQL statement:
-select er1_0.id from exchange_rates er1_0 where er1_0.valid_from>? fetch first ? rows only [42104-224]
